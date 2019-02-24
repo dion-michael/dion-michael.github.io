@@ -1,0 +1,604 @@
+body{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Karla', sans-serif;
+}
+
+/*SIDEBAR*/
+
+.sidebar-container{
+    height: 100%;
+    width: 20%;
+    background-color: #1e2223;
+    position: fixed;
+    text-align: center;
+    vertical-align: middle;
+    box-shadow: 0px 5px 5px #1e2223;
+    overflow: scroll;
+    font-family: 'Karla', sans-serif;
+}
+
+.logo-container{
+    height: 75px;
+    padding: 20%;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.logo-container p{
+    color: #f1ab00;
+}
+
+.separator-white{
+    border-top: 1px solid white;
+    width: 60%;
+}
+
+.separator-dark{
+    border-top: 1px solid #1e2223;
+    width: 60%;
+}
+
+.sidebar-content{
+    text-align: center;
+    color: white;
+}
+
+/* RESPONSIVE LOGO!! */
+.logo{
+    height: 100%;
+    width: auto;      
+    max-width: 75px;
+}
+
+.logo:hover{
+    height: 105%;
+    width: auto;
+    max-width: 80px;
+}
+
+.sidebar-menu{
+    padding-left: 0;
+    margin-top: 80px;
+}
+
+.sidebar-menu a{
+    font-weight: lighter;
+    margin: 40px 0px;
+    display: block;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar-menu a:hover{
+    font-weight: lighter;
+    margin: 40px 0px;
+    display: block;
+    font-size: 20px;
+    text-shadow: 0px 0px 4px #f1ab00;
+    color: #f1ab00;
+}
+
+.bottom-socmed-links{
+    margin-top: 50%;
+    width: 100%; 
+    margin-bottom: 60px;
+}
+
+.social-icon{
+    height: 20px;
+    width: 20px;
+    margin: 10px 10px;
+}
+
+.social-icon:hover{
+    height: 30px;
+    width: 30px;
+    margin: 10px 10px;
+}
+
+
+
+/*CONTENT CONTAINER*/
+#main-container{
+    height: 100%;
+    background-color: gray;
+    margin-left: 20%;
+    
+}
+
+.content-container{
+    color: #252525;
+    text-align: center;
+}
+
+
+
+
+/* BANNER */
+.banner-container{
+    height: 950px;
+}
+
+#banner{
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.banner-overlay{
+    background-image: linear-gradient(to bottom right,#0F2027,#203A43,#2C5364);
+	opacity: .6; 
+    overflow: hidden;
+    height: 950px;
+    width: 80%;
+    position: absolute;
+}
+
+.logo-banner{
+    width: 100%;
+    height: auto;      
+    max-height: 500px;
+}
+
+.banner-separator-white{
+    border-bottom: 1px solid white;
+    width: 70%;
+    height: auto;      
+    max-width: 500px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.centerized{
+    color: white;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    padding-left: 50px;
+    z-index: 4;
+    overflow: hidden;
+}
+
+.centerized h2{
+    font-weight: 300;
+    margin: 0;
+}
+
+.centerized h1{
+    margin: 0;
+}
+
+
+.separator-white-70{
+    border-top: 1px solid white;
+}
+
+div #content:hover + #nav-product{
+    color: #f1ab00;
+}
+
+
+
+/*1st CONTENT*/
+
+.content-container{
+    display: flex;
+    flex-direction: row;
+}
+
+/*CONTAINER FOR PRODUCT NAVIGATION*/
+.product-nav{
+    width: 40%;
+    font-size: 12pt;
+    height: 1000px;
+    border-right: 1px solid #252525;
+}
+
+.product-nav-holder a {
+    font-family: 'Karla', sans-serif;
+    display: block;
+    margin: 20px 0px;
+    text-decoration: none;
+    color: #252525;
+}
+
+.product-nav-holder a:hover{
+    font-weight: lighter;
+    margin: 20px 0px;
+    display: block;
+    font-size: 18px;
+    text-shadow: 0px 0px 2px #f1ab00;
+    color: #f1ab00;
+}
+
+.product-nav h2{
+    margin: 40px 0px;
+}
+
+.product-nav-holder{
+    padding: 0;
+    margin-top: 40px;
+}
+
+/*CONTAINER FOR PRODUCT CONTENT*/
+.product-content{
+    width: 100%;
+    height: 1000px;
+    margin: 40px 0px;
+    overflow: scroll;
+    scroll-behavior: smooth;
+}
+
+.justify p{
+    text-align: justify;
+}
+
+/*CONTAINER FOR PRODUCT IMAGE*/
+.product-holder div{
+    width: 300px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    margin-top: 30px;
+}
+.product-holder img{
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    max-width: 300px;
+    border: 1px solid gray;
+}
+
+.product-holder .image{
+    margin: 0;
+}
+
+.product-holder a{
+    display: inline;
+}
+
+#description{
+    z-index: 2;
+    width: 100%;
+    margin: 0;
+    position: absolute;
+}
+
+.img-container{
+    position: relative;
+    width: 100%;
+}
+
+.image{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    margin: 0;
+}
+
+.middle p{
+    font-weight: bold;
+}
+
+#btn-buy{
+    border: 3px solid #1e2223;
+    color: #1e2223;
+    border-radius: 12px;
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+    padding: 16px 32px;
+    width: 100px;
+}
+
+#btn-buy:hover{
+    background-color: #1e2223;
+    color: #eea814;
+    border-radius: 12px;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    padding: 16px 32px;
+    width: 100px;
+}
+
+.size-container label{
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+}
+
+.img-container:hover .image{
+    opacity: 0.3;
+}
+
+.img-container:hover .middle{
+    opacity: 1;
+}
+
+.section-separator{
+    border: 1pt solid #252525;
+    width: 80%;
+    opacity: 0.1;
+    margin: 80px auto;
+}
+
+.blockquote{
+    text-align: left;
+    padding-left: 20px;
+    border-left: 2px solid black;
+    margin-left: 20px;
+}
+
+/*============================== FAQ ==============================*/
+
+.faq-content-container{
+    margin: 0;
+    position: relative;
+    height: 500px;
+    text-align: center;
+    z-index: 4;
+    overflow: scroll;
+}
+
+.faq-content-container p{
+    color: #252525;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 2em;
+    font-weight: 700;
+}
+
+.faq-content-container h1{
+    color: #252525;
+    text-transform: uppercase;
+}
+
+.about-container{
+    height: 500px;
+}
+
+#background-about{
+    background-image: url(../img/about.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.about-overlay{
+    background-image: linear-gradient(to bottom right,#C6FFDD,#FBD786, #f7797d);
+	opacity: .6; 
+    overflow: hidden;
+    height: 500px;
+    width: 80%;
+    position: absolute;
+}
+
+.faq-text-container{
+    padding: 40px 80px;
+}
+
+/*============================== CONTACT US ==============================*/
+
+.contact-container{
+    text-align: center;
+}
+
+/*CONTAINER FOR PRODUCT IMAGE*/
+.contact-holder div{
+    
+}
+.product-holder img{
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    max-width: 300px;
+    border: 1px solid gray;
+}
+
+.product-holder .image{
+    margin: 0;
+}
+
+.contact-holder a{
+    display: inline;
+}
+
+.contact-holder{
+    padding: 0px 10%;
+}
+
+.form-container{
+    text-align: center;
+}
+
+/*============================== RESPONSIVE FORM ==============================*/
+
+ /* Style inputs, select elements and textareas */
+ input[type=text], input[type=tel],select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  
+  /* Style the label to display next to the inputs */
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  .container input, textarea{
+      border: 2px solid #252525;
+  }
+
+  /* Style the submit button */
+  .btn-light {
+    color: #252525;
+    padding: 12px 20px;
+    border: 2px solid #252525;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin-top: 5px;
+  }
+
+  .btn-light:hover{
+    color: white;
+    background-color: #252525;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin-top: 5px;
+  }
+  
+  /* Style the container */
+  .container {
+    border-radius: 5px;
+    padding: 20px 40px;
+  }
+
+  .container label{
+      font-family: 'Karla', sans-serif;
+      color: #252525;
+      text-align: left;
+  }
+
+  input, textarea{
+      font-family: 'Montserrat', sans-serif;
+  }
+  
+  /* Floating column for labels: 25% width */
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  /* Floating column for inputs: 75% width */
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  } 
+
+
+/*============================== TEST ==============================*/
+
+.contactus-container{
+    padding: 20px 10%;
+    text-align: center;
+}
+
+.left, .right{
+    text-align: justify;
+}
+
+.left{
+    float: left;
+    width: 30%;
+}
+
+.right{
+    float: right;
+    margin-left: 20px;
+    width: 60%;
+    border-left: #b9b9b9 solid 1px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+    .left, .right{
+      width: 100%;
+      margin-top: 0;
+      border: none;
+    }
+  } 
+
+@media screen and (max-width: 1000px) {
+.left h2, .left h3, .left p, .whatsapp{
+    text-align: center;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+.left h3{
+    margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+.right h3{
+    margin-top: 20px;
+    }
+}
+
+.left h3{
+    margin-bottom: 5px;
+}
+
+.left p{
+    margin-top: 0px;
+}
+
+#footer {
+    position: relative;
+    bottom: 0;
+    padding: 1rem;
+    background-color: #1e2223;
+    text-align: center;
+    color: #f1ab00;
+    clear: both;
+  }
+
+.footer h5 {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 11px;
+    text-align: center;
+  }
+
